@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Tech | Creative Freelancer</title>
+    <title>MOSES NJUGUNA | WEB DEVELOPER</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="images/fav.jpg" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Typed.js for typing animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -127,23 +129,29 @@
 </head>
 <body class="font-sans bg-gray-50 text-dark">
     <!-- Floating shapes background -->
-    <div class="fixed w-full h-full top-0 left-0 -z-10 overflow-hidden">
-        <div class="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary opacity-10 animate-float"></div>
-        <div class="absolute top-60 right-20 w-48 h-48 rounded-full bg-secondary opacity-10 animate-float" style="animation-delay: 1s;"></div>
-        <div class="absolute bottom-20 left-1/4 w-40 h-40 rounded-full bg-accent opacity-10 animate-float" style="animation-delay: 2s;"></div>
+    <div class="fixed w-full h-full top-0 left-0 -z-20 overflow-hidden" style="background-image: url('images/b1.jpeg'); background-size: cover; background-position: center;"></div>
+
+    <!-- Dark overlay -->
+    <div class="fixed w-full h-full top-0 left-0 -z-10 bg-black opacity-80"></div>
+   <!-- Background with floating image (left) and one accent bubble (bottom) -->
+   
+    <div class="absolute top-20 left-10 w-32 h-32 rounded-full overflow-hidden animate-float shadow-lg border-4 border-primary">
+      <img src="images/mose.jpg" alt="Floating image left" class="w-full h-full object-cover rounded-full" />
     </div>
+</div>  
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-glass">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold shimmer">Mark Tech</a>
+                <a href="#" class="text-2xl font-bold shimmer">Moses Njuguna</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="font-medium hover:text-primary transition-colors">Home</a>
                     <a href="#about" class="font-medium hover:text-primary transition-colors">About</a>
                     <a href="#services" class="font-medium hover:text-primary transition-colors">Services</a>
                     <a href="#skills" class="font-medium hover:text-primary transition-colors">Skills</a>
-                    <a href="#contact" class="px-6 py-2 bg-primary text-white rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 bounce-animation">Hire Me</a>
+                    <a href="#projects" class="font-medium hover:text-primary transition-colors">Projects</a>
+                    <a href="#contact" class="px-6 py-2 bg-primary text-white rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 bounce-animation">Contact Me</a>
                 </div>
                 <div class="md:hidden">
                     <button id="menu-toggle" class="focus:outline-none text-primary">
@@ -158,38 +166,51 @@
             <a href="#about" class="block px-6 py-3 hover:bg-gray-100 font-medium">About</a>
             <a href="#services" class="block px-6 py-3 hover:bg-gray-100 font-medium">Services</a>
             <a href="#skills" class="block px-6 py-3 hover:bg-gray-100 font-medium">Skills</a>
-            <a href="#contact" class="block px-6 py-3 bg-primary text-white font-medium mx-6 my-3 rounded-full text-center">Hire Me</a>
+            <a href="#projects" class="block px-6 py-3 hover:bg-gray-100 font-medium">Projects</a>
+            <a href="#contact" class="block px-6 py-3 bg-primary text-white font-medium mx-6 my-3 rounded-full text-center">Contact Me</a>
         </div>
     </nav>
 
+
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-                    <span class="px-4 py-1 rounded-full bg-primary bg-opacity-20 text-primary font-medium mb-4 inline-block pulse-animation">Freelance Professional</span>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        Hi! I'm <span class="shimmer">Mark Kariuki</span>
-                    </h1>
-                    <div class="text-lg text-gray-600 mb-8 md:pr-12">
-                        I'm a <span id="typing-text" class="text-primary font-medium"></span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="px-8 py-3 bg-primary text-white rounded-full font-medium hover:shadow-lg hover:bg-opacity-90 transition-all transform hover:scale-105 bounce-animation">Let's Talk</a>
-                        <a href="#services" class="px-8 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-white transition-all bounce-animation">My Services</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="w-64 h-64 md:w-80 md:h-80 relative">
-                        <div class="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute inset-4 bg-white rounded-full shadow-lg flex items-center justify-center">
-                            <i class="fas fa-user-tie text-6xl text-primary rotate-icon"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="home" class="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        
+        <!-- Left content -->
+        <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+          <span class="px-4 py-1 rounded-full bg-primary bg-opacity-20 text-primary font-medium mb-4 inline-block pulse-animation">Web Developer</span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <b>Hi! I'm </b><span class="shimmer"><br>MOSES NJUGUNA</span>
+          </h1>
+          <div class="text-lg text-gray-600 mb-8 md:pr-12">
+            I'm a <span id="typing-text" class="text-primary font-medium"></span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="https://wa.me/254793589963" target="_blank" class="px-8 py-3 bg-primary text-white rounded-full font-medium hover:shadow-lg hover:bg-opacity-90 transition-all transform hover:scale-105 bounce-animation">
+                Let's Talk 
+            </a>
+        
+            <a href="#services" class="px-8 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-white transition-all bounce-animation">My Services</a>
+          </div>
         </div>
-    </section>
+        
+        <!-- Right circle image -->
+        <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+          <div class="w-64 h-64 md:w-80 md:h-80 relative">
+            <!-- Outer pulsing border -->
+            <div class="absolute inset-0 bg-primary rounded-full opacity-20 animate-pulse"></div>
+            <!-- Inner image container -->
+            <div class="absolute inset-4 bg-white rounded-full shadow-lg flex items-center justify-center overflow-hidden">
+              <img src="images/Moses.jpg" alt="Moses Njuguna" class="w-full h-full object-cover rounded-full" />
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
@@ -221,9 +242,9 @@
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-6">Passionate Freelancer & Tech Enthusiast</h3>
+                    <h3 class="text-2xl font-bold mb-6">Passionate Web Developer & Tech Enthusiast</h3>
                     <p class="text-lg text-gray-600 mb-6">
-                        I'm Mark Kariuki, a young and ambitious individual with a strong self-motivated drive and a genuine passion for technology. 
+                        I'm <b>MOSES NJUGUNA,</b> a young and ambitious individual with a strong self-motivated drive and a genuine passion for technology. 
                         My dedication to continuous learning and proactive problem-solving fuels my pursuit of excellence in the technical field.
                     </p>
                     <p class="text-lg text-gray-600 mb-8">
@@ -232,11 +253,11 @@
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="text-2xl font-bold gradient-text">2+</div>
+                            <div class="text-2xl font-bold gradient-text">1+</div>
                             <p class="text-gray-500">Years Experience</p>
                         </div>
                         <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="text-2xl font-bold gradient-text">50+</div>
+                            <div class="text-2xl font-bold gradient-text">40+</div>
                             <p class="text-gray-500">Projects</p>
                         </div>
                         <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
@@ -244,7 +265,7 @@
                             <p class="text-gray-500">Support</p>
                         </div>
                         <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
-                            <div class="text-2xl font-bold gradient-text">100%</div>
+                            <div class="text-2xl font-bold gradient-text">99.9%</div>
                             <p class="text-gray-500">Satisfaction</p>
                         </div>
                     </div>
@@ -266,11 +287,11 @@
                 <div class="w-16 h-16 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center mb-6">
                     <i class="fas fa-palette text-2xl text-primary"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Graphic/Logo Design</h3>
+                <h3 class="text-xl font-bold mb-4">IT Technical Support</h3>
                 <p class="text-gray-600 mb-6">
-                    Get engaging designs for Instagram Posts, Stories, Brochures, Flyers, Business Cards & more that capture attention and convey your brand message.
+                    Providing expert IT support services including troubleshooting, system setup, network management, software installations and cybersecurity solutions to ensure your technology runs smoothly and efficiently.
                 </p>
-                <a href="#contact" class="text-primary font-medium flex items-center bounce-animation">
+                <a href="https://wa.me/254793589963" class="text-primary font-medium flex items-center bounce-animation" target="_blank">
                     Learn More
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -282,9 +303,10 @@
                 </div>
                 <h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
                 <p class="text-gray-600 mb-6">
-                    Search Engine Optimization to help your website rank higher on Google and other search engines, increasing visibility and driving organic traffic.
+                    Improve your website’s visibility with expert Search Engine Optimization strategies that help you rank higher on Google and other search engines—driving organic traffic and boosting your online presence.
                 </p>
-                <a href="#contact" class="text-secondary font-medium flex items-center bounce-animation">
+                
+                <a href="https://wa.me/254793589963" class="text-secondary font-medium flex items-center bounce-animation">
                     Learn More
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -294,11 +316,11 @@
                 <div class="w-16 h-16 rounded-lg bg-accent bg-opacity-20 flex items-center justify-center mb-6">
                     <i class="fas fa-laptop-code text-2xl text-accent"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Web Design</h3>
+                <h3 class="text-xl font-bold mb-4">Web Development</h3>
                 <p class="text-gray-600 mb-6">
-                    Professional and reliable web design for E-commerce, photography portfolios, and business websites that are responsive, fast, and user-friendly.
+                   Professional and reliable web development services for E-commerce platforms, Restaurant Management Systems, personal portfolios, and business websites—built to be responsive, fast, and user-friendly.
                 </p>
-                <a href="#contact" class="text-accent font-medium flex items-center bounce-animation">
+                <a href="https://wa.me/254793589963" class="text-accent font-medium flex items-center bounce-animation">
                     Learn More
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -317,6 +339,16 @@
             <span class="px-4 py-1 rounded-full bg-primary bg-opacity-20 text-primary font-medium mb-4 inline-block">My Skills</span>
             <h2 class="text-3xl md:text-4xl font-bold shimmer">My Expertise</h2>
         </div>
+
+        <p>
+            As an aspiring full-stack developer, 
+            I’m constantly growing my tech stack.
+            I’m highly proficient in frontend technologies 
+            and currently expanding my backend skills
+            through real-world projects. 
+            I'M also exploring areas like Data Science and Analytics
+        </p>
+        <br>
         
         <div class="flex flex-col md:flex-row">
             <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12" data-aos="fade-right" data-aos-duration="1000">
@@ -337,10 +369,10 @@
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
                         <span class="font-medium">CSS</span>
-                        <span class="font-bold text-primary">90%</span>
+                        <span class="font-bold text-primary">80%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="90%"></div>
+                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="80%"></div>
                     </div>
                 </div>
                 
@@ -348,10 +380,10 @@
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
                         <span class="font-medium">JavaScript</span>
-                        <span class="font-bold text-primary">90%</span>
+                        <span class="font-bold text-primary">75%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="90%"></div>
+                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="75%"></div>
                     </div>
                 </div>
                 
@@ -359,21 +391,21 @@
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
                         <span class="font-medium">PHP</span>
-                        <span class="font-bold text-primary">90%</span>
+                        <span class="font-bold text-primary">40%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="90%"></div>
+                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="40%"></div>
                     </div>
                 </div>
                 
                 <!-- Adobe Photoshop -->
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
-                        <span class="font-medium">Adobe Photoshop</span>
-                        <span class="font-bold text-primary">30%</span>
+                        <span class="font-medium">Python</span>
+                        <span class="font-bold text-primary">70%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="30%"></div>
+                        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="70%"></div>
                     </div>
                 </div>
 
@@ -382,10 +414,10 @@
 <div class="mb-8">
     <div class="flex justify-between mb-2">
         <span class="font-medium">Adobe Illustrator</span>
-        <span class="font-bold text-primary">30%</span>
+        <span class="font-bold text-primary">40%</span>
     </div>
     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="30%"></div>
+        <div class="h-full bg-gradient-to-r from-primary to-purple-600 rounded-full progress-glow skill-bar" style="width: 0%" data-width="40%"></div>
     </div>
 </div>
             </div>
@@ -396,44 +428,44 @@
                 <!-- Laravel -->
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
-                        <span class="font-medium">Laravel</span>
-                        <span class="font-bold text-primary">10%</span>
+                        <span class="font-medium">UI/UX Design</span>
+                        <span class="font-bold text-primary">50%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="10%"></div>
+                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="50%"></div>
                     </div>
                 </div>
                 
-                <!-- Node.js -->
+                <!-- IT Technical Support -->
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
-                        <span class="font-medium">Node.js</span>
-                        <span class="font-bold text-primary">10%</span>
+                        <span class="font-medium">IT Technical Support</span>
+                        <span class="font-bold text-primary">80%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="10%"></div>
+                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="80%"></div>
                     </div>
                 </div>
                 
-                <!-- Java -->
+                <!-- Git & GitHub -->
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
-                        <span class="font-medium">Java</span>
-                        <span class="font-bold text-primary">10%</span>
+                        <span class="font-medium">Git & GitHub</span>
+                        <span class="font-bold text-primary">75%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="10%"></div>
+                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="75%"></div>
                     </div>
                 </div>
                 
-                <!-- Kotlin -->
+                <!-- Django -->
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
-                        <span class="font-medium">Kotlin</span>
-                        <span class="font-bold text-primary">10%</span>
+                        <span class="font-medium">Django</span>
+                        <span class="font-bold text-primary">60%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="10%"></div>
+                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="60%"></div>
                     </div>
                 </div>
                 
@@ -441,10 +473,10 @@
                 <div class="mb-8">
                     <div class="flex justify-between mb-2">
                         <span class="font-medium">Crypto Trading</span>
-                        <span class="font-bold text-primary">50%</span>
+                        <span class="font-bold text-primary">40%</span>
                     </div>
                     <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="50%"></div>
+                        <div class="h-full bg-gradient-to-r from-secondary to-pink-500 rounded-full progress-glow skill-bar" style="width: 0%" data-width="40%"></div>
                     </div>
                 </div>
                 
@@ -463,30 +495,116 @@
     </div>
 </section>
 
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="px-4 py-1 rounded-full bg-primary bg-opacity-20 text-primary font-medium mb-4 inline-block">My Projects</span>
+            <h2 class="text-3xl md:text-4xl font-bold shimmer">Portfolio Project Highlights</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all tilt-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/e-restaurant.jpg" alt="E-commerce Website" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-primary">E-Restaurant Website</h3>
+                    <p class="text-gray-600 mb-4"> <b> A fully functional restaurant Management System with user authentication, booking system and Mpesa payment integration.</b>
+                        <br>
+                        This E-Restaurant Website revolutionizes dining by providing
+                        an all-in-one online platform for making reservations and menu browsing. 
+                        With a seamless user experience, customers can easily 
+                        explore a restaurant’s offerings, book an event or 
+                        even reserve a table—all from the comfort of their home.
+                        It's the ultimate solution for modern dining, 
+                        combining convenience, efficiency, and excellent 
+                        service in one digital space.
+                    </p>
+                    <a href="https://github.com/njugunah800/Restaurant-Management-System.git" target="_blank" class="text-primary font-medium flex items-center hover:underline">
+                        View Project
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all tilt-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/crime.png" alt="Crime Rate Prediction" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-secondary">Crime Rate Prediction</h3>
+                    <p class="text-gray-600 mb-4"> <b>AI-powered app that predicts crime levels based on 
+                        past data using ML Model & a Flask application.</b>
+                        <br>
+                        Crime Rate Prediction System uses the power 
+                        of historical data to predict future crime trends,
+                        providing accurate insights into potential crime 
+                        levels in any given area. Whether you're a local 
+                        authority or concerned citizen, this system helps 
+                        you make informed decisions to enhance community safety.
+                         With real-time predictions for various crime types, 
+                         it empowers users to stay ahead of potential threats 
+                         and take  measures for safer neighborhoods.
+                    </p>
+                    <a href="https://github.com/njugunah800/Crime-Prediction-System.git" target="_blank" class="text-secondary font-medium flex items-center hover:underline">
+                        View Project
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all tilt-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/house pre.jpeg" alt="Finance Tracker App" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-accent">House Prediction System</h3>
+                    <p class="text-gray-600 mb-4"><b> A system that accurately predicts house prices using ANNs for confident real estate investment decisions </b>
+                     <br>
+                        This System uses advanced data ANNs 
+                        to predict property values based 
+                        on various factors such as location, size
+                        and market trends. Whether you're
+                        a potential buyer, seller or investor, 
+                        this system provides valuable insights to make
+                        informed decisions in the real estate market. 
+                        By leveraging historical data and predictive
+                        modeling the system helps you forecast future property 
+                        prices with accuracy, ensuring you stay ahead 
+                        in a competitive market
+                    
+                    </p>
+                    <a href="https://github.com/njugunah800/House-Price-Prediction-Using-Ann.git" target="_blank" class="text-accent font-medium flex items-center hover:underline">
+                        View Project
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section id="contact" class="py-16 bg-gradient-to-r from-purple-500 to-indigo-600">
     <div class="max-w-5xl mx-auto px-4">
       <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div class="md:flex">
           <div class="md:w-1/2 bg-gradient-to-br from-blue-400 to-purple-500 p-12 text-white">
             <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
-            <p class="mb-8">We'd love to hear from you! Fill out the form and we'll get back to you as soon as possible.</p>
+            <p class="mb-8">I would really  love to hear from you! Fill out the form and I'll get back to you as soon as possible.</p>
             <div class="space-y-4">
               <div class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span>kariukikm123@gmail.com</span>
+                <span>njugunahmoses448@gmail.com</span>
               </div>
               <div class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span>+254799605656</span>
+                <span>+254793589963</span>
               </div>
             </div>
           </div>
           <div class="md:w-1/2 p-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-8">Send us a message</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-8">Send me a message</h3>
             <form>
               <div class="mb-6">
                 <label for="name" class="block text-gray-700 mb-2 font-medium">Your Name</label>
@@ -526,26 +644,26 @@
 <div class="container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
-            <h3 class="text-xl font-bold shimmer">Mark Tech</h3>
-            <p class="text-gray-400 mt-2">Creative & Technical Freelancer</p>
+            <h3 class="text-xl font-bold shimmer">Moses Njuguna</h3>
+            <p class="text-gray-400 mt-2">Creative Web Developer & Technical Ethusiasist</p>
         </div>
         <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
+            <a href="https://x.com/KuriahMoses2?t=dlvJ5J3HHRuzihwnTkwufQ&s=09" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
+            <a href="https://www.instagram.com/moses_njugunah?igsh=Z2FsajltZWZmdWFh" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
+            <a href="https://www.linkedin.com/in/moses-njuguna-068286281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
+            <a href="https://github.com/njugunah800" class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center hover:bg-opacity-100 transition-all">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </div>
     <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-        <p class="text-gray-400">&copy; 2025 Mark Tech. All rights reserved.</p>
+        <p class="text-gray-400">&copy; 2025 Moses Njuguna's Portfolio. All rights reserved.</p>
     </div>
 </div>
 </footer>
@@ -574,7 +692,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Typed.js initialization
     new Typed('#typing-text', {
-        strings: ['Web Developer', 'Graphic Designer', 'SEO Specialist', 'Freelancer', 'Crypto Enthusiast'],
+        strings: ['Web Developer', 'Data Scientist', 'SEO Specialist', 'IT Support Personell', 'Graphic Designer'],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
